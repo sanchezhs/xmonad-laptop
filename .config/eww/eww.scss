@@ -1,0 +1,62 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+
+// Variable Color's
+$background: #1e1e1e;
+$foreground: #A9B1D6;
+
+$black: #24283B;
+$gray: #565F89;
+$red: #F7768E;
+$green: #73DACA;
+$yellow: #E0AF68;
+$blue: #409EFF;
+$magenta: #BB9AF7;
+$cyan: #7DCFFF;
+$white: $foreground;
+
+
+.cal-box {
+  padding: 15px;
+}
+
+.cal {
+  color: #D4D4D4;  
+}
+
+
+.cal-box {
+  background-color: $background;
+  font-family: monospace;
+  font-size: 1.05em;
+  font-weight: normal;
+
+  .cal-inner-box {
+    padding: 5px;
+  }
+}
+
+calendar:selected {
+  color: $blue;
+}
+
+
+calendar.header {
+  color: $blue;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: $magenta;
+}
+
+calendar.highlight {
+  color: $magenta;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: gray;
+}
